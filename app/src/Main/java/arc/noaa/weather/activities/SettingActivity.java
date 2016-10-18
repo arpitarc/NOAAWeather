@@ -64,16 +64,7 @@ public class SettingsActivity extends PreferenceActivity
         setCustomDateEnabled();
         updateDateFormatList();
 
-        // Set summaries to current value
-        setListPreferenceSummary("unit");
-        setListPreferenceSummary("lengthUnit");
-        setListPreferenceSummary("speedUnit");
-        setListPreferenceSummary("pressureUnit");
-        setListPreferenceSummary("refreshInterval");
-        setListPreferenceSummary("windDirectionFormat");
-        setListPreferenceSummary("theme");
-    }
-
+      
     @Override
     public void onPause(){
         super.onPause();
@@ -87,7 +78,6 @@ public class SettingsActivity extends PreferenceActivity
             case "unit":
             case "lengthUnit":
             case "speedUnit":
-            case "pressureUnit":
             case "windDirectionFormat":
                 setListPreferenceSummary(key);
                 break;

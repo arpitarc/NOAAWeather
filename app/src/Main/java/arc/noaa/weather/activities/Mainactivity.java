@@ -76,18 +76,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     Typeface weatherFont;
     Weather todayWeather = new Weather();
 
-    TextView todayTemperature;
-    TextView todayDescription;
-    TextView todayWind;
-    TextView todayPressure;
-    TextView todayHumidity;
-    TextView todaySunrise;
-    TextView todaySunset;
-    TextView lastUpdate;
-    TextView todayIcon;
-    ViewPager viewPager;
-    TabLayout tabLayout;
-
+   
     View appView;
 
     LocationManager locationManager;
